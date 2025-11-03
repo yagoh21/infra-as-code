@@ -5,7 +5,7 @@ terraform {
     key     = "site2/terraform.tfstate"
     region  = "us-east-2"
     encrypt = true
-    use_lockfile = true
+    # use_lockfile = true  # REMOVER OU COMENTAR ESTA LINHA
 
   }
 }
