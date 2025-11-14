@@ -9,7 +9,7 @@ on:
         default: 'false'
         type: choice
         options:
-                - true
+            - true
                  - false  
 permissions:
   id-token: write
