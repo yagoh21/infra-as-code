@@ -6,11 +6,11 @@ on:
       apply:
         description: 'Executar o terraform apply?'
         required: true
-        default: 'false'
+        default: false
         type: choice #Poderia ser do tipo boolean, mas escolhi choice para deixar mais amigável
         options:
           - true
-            - false
+           - false
 
 permissions:
   id-token: write
