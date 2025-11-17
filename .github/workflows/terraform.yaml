@@ -1,16 +1,16 @@
 name: Terraform CI/CD
 
 on:
-  workflow_dispatch: # Allows manual triggering of the workflow
+  workflow_dispatch:
     inputs:
       apply:
         description: 'Executar o terraform apply?'
         required: true
-        default: false
-        type: choice #Poderia ser do tipo boolean, mas escolhi choice para deixar mais amigável
+        default: 'false'
+        type: choice
         options:
-          - true
-           - false
+          - 'true'   # aparece em cima
+          - 'false'  
 
 permissions:
   id-token: write
